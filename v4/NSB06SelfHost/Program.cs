@@ -7,30 +7,30 @@ using NServiceBus;
 
 namespace NSB06SelfHost
 {
-    class Program
-    {
-        static void Main( string[] args )
-        {
-            var embeddedSore = new Raven.Client.Embedded.EmbeddableDocumentStore
-            {
-                DataDirectory = @"~\..\RavenDB\Data"
-            }.Initialize();
+	class Program
+	{
+		static void Main( string[] args )
+		{
+			var embeddedSore = new Raven.Client.Embedded.EmbeddableDocumentStore
+			{
+				DataDirectory = @"~\..\RavenDB\Data"
+			}.Initialize();
 
-            var startableBus = NServiceBus.Configure.With()
-                .DefaultBuilder()
-                .Log4Net()
-                .DefiningCommandsAs( t => t.Namespace != null && t.Namespace.EndsWith( ".Commands" ) )
-                .DefiningEventsAs( t => t.Namespace != null && t.Namespace.EndsWith( ".Events" ) )
-                .RavenPersistenceWithStore( embeddedSore )
-                .UnicastBus()
-                .LoadMessageHandlers()
-                .CreateBus();
+			var startableBus = NServiceBus.Configure.With()
+							.DefaultBuilder()
+							.Log4Net()
+							.DefiningCommandsAs( t => t.Namespace != null && t.Namespace.EndsWith( ".Commands" ) )
+							.DefiningEventsAs( t => t.Namespace != null && t.Namespace.EndsWith( ".Events" ) )
+							.RavenPersistenceWithStore( embeddedSore )
+							.UnicastBus()
+							.LoadMessageHandlers()
+							.CreateBus();
 
-            var bus = startableBus.Start();
+			var bus = startableBus.Start();
 
-            Console.Read();
+			Console.Read();
 
-            startableBus.Dispose();
-        }
-    }
+			startableBus.Dispose();
+		}
+	}
 }
