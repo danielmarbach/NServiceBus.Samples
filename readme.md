@@ -1,9 +1,3 @@
-Conferences samples repository
-
-Each conference has its own branch
-
----
-
 # Disclaimer
 These samples, as most samples, are focused on a specific problem, or a set of, in an oversimplified way.
 
