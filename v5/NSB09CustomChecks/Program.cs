@@ -21,13 +21,18 @@ namespace NSB09CustomChecks
 
 			//using( var bus = Bus.CreateSendOnly( cfg ) )
 			//{
+			//	Console.WriteLine("Send-only bus is running...");
 			//	Console.Read();
 			//}
 
 			using( var bus = Bus.Create( cfg ).Start() )
 			{
+				Console.WriteLine( "Bus is running..." );
 				Console.Read();
 			}
+
+			Console.WriteLine( "Disposed" );
+			Console.Read();
 		}
 	}
 
