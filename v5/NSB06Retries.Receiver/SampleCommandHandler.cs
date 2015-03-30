@@ -12,14 +12,6 @@ namespace NSB06Retries.Receiver
 	{
 		public void Handle( SampleCommand message )
 		{
-			//var timeout = 75;
-			//var slept = 0;
-			//while( slept < timeout )
-			//{
-			//	Thread.Sleep( 1000 );
-			//	slept++;
-			//}
-
 			throw new ArgumentException( "Something went wrong." );
 		}
 	}
