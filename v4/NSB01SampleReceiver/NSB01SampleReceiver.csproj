@@ -76,9 +76,6 @@
     <Reference Include="Raven.Database">
       <HintPath>..\..\packages\RavenDB.Database.2.5.2916\lib\net45\Raven.Database.dll</HintPath>
     </Reference>
-    <Reference Include="ServiceControl.Plugin.Nsb4.DebugSession">
-      <HintPath>..\..\packages\ServiceControl.Plugin.Nsb4.DebugSession.1.0.0\lib\net40\ServiceControl.Plugin.Nsb4.DebugSession.dll</HintPath>
-    </Reference>
     <Reference Include="ServiceControl.Plugin.Nsb4.Heartbeat">
       <HintPath>..\..\packages\ServiceControl.Plugin.Nsb4.Heartbeat.1.1.0\lib\net40\ServiceControl.Plugin.Nsb4.Heartbeat.dll</HintPath>
     </Reference>

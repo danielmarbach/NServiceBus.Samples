@@ -18,10 +18,14 @@ namespace NSB13SamplePublisher
 
 			var embeddedSore = new EmbeddableDocumentStore
 			{
+				ResourceManagerId = new Guid( "{FDF958EB-7EE3-42F9-B757-E9836DF1F417}" ),
 				DataDirectory = @"~\RavenDB\Data"
 			}.Initialize();
 
-			cfg.UsePersistence<RavenDBPersistence>().SetDefaultDocumentStore( embeddedSore );
+			cfg.UsePersistence<RavenDBPersistence>()
+				.DoNotSetupDatabasePermissions()
+				.SetDefaultDocumentStore( embeddedSore );
+
 			cfg.Conventions()
 				.DefiningCommandsAs( t => t.Namespace != null && t.Namespace.EndsWith( ".Commands" ) )
 				.DefiningEventsAs( t => t.Namespace != null && t.Namespace.EndsWith( ".Events" ) );

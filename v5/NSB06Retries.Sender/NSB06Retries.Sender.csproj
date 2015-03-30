@@ -36,9 +36,6 @@
     <Reference Include="NServiceBus.Host">
       <HintPath>..\..\packages\NServiceBus.Host.6.0.0\lib\net45\NServiceBus.Host.exe</HintPath>
     </Reference>
-    <Reference Include="ServiceControl.Plugin.Nsb5.DebugSession">
-      <HintPath>..\..\packages\ServiceControl.Plugin.Nsb5.DebugSession.1.0.0\lib\net45\ServiceControl.Plugin.Nsb5.DebugSession.dll</HintPath>
-    </Reference>
     <Reference Include="ServiceControl.Plugin.Nsb5.Heartbeat">
       <HintPath>..\..\packages\ServiceControl.Plugin.Nsb5.Heartbeat.1.1.0\lib\net45\ServiceControl.Plugin.Nsb5.Heartbeat.dll</HintPath>
     </Reference>
