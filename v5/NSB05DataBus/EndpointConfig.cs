@@ -41,6 +41,7 @@ namespace NSB05DataBus
 			{
 				SomeProperty = "This message contains a large blob that will be sent on the data bus",
 				LargeBlob = new byte[ 1024 * 1024 * 5 ] //5MB
+                //LargeBlob = new byte[ 1024 * 1024 * 900 ] //900MB
 			};
 
 			Bus.SendLocal( message );
