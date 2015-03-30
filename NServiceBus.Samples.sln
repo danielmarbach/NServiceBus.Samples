@@ -164,7 +164,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "10 - Asp.Net Injection", "1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NSB10AspNetInjection", "v5\NSB10AspNetInjection\NSB10AspNetInjection.csproj", "{50538A85-309A-4E36-BABC-E63FEE0F2684}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "11 - Publish in case or exception", "11 - Publish in case or exception", "{57DF5D66-5BED-4995-938E-09A9F9753B75}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "11 - Publish in case of exception", "11 - Publish in case of exception", "{57DF5D66-5BED-4995-938E-09A9F9753B75}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NSB11PublishIfException", "v5\NSB11PublishIfException\NSB11PublishIfException.csproj", "{3989A41E-2B4E-4B75-95CD-ACA7D33717B1}"
 EndProject
