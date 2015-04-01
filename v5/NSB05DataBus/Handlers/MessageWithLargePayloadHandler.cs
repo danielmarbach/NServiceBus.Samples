@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Topics.Radical;
 
 namespace NSB05DataBus.Handlers
 {
@@ -11,7 +12,10 @@ namespace NSB05DataBus.Handlers
 	{
 		public void Handle( MessageWithLargePayload message )
 		{
-			
+			using( ConsoleColor.Green.AsForegroundColor() ) 
+			{
+				Console.WriteLine( "Handled" );
+			}
 		}
 	}
 }
