@@ -57,8 +57,9 @@
     <Reference Include="NServiceBus.RavenDB">
       <HintPath>..\..\packages\NServiceBus.RavenDB.2.0.1\lib\net45\NServiceBus.RavenDB.dll</HintPath>
     </Reference>
-    <Reference Include="Radical">
-      <HintPath>..\..\packages\Radical.1.4.3.1\lib\net45\Radical.dll</HintPath>
+    <Reference Include="Radical, Version=1.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Radical.1.5.1.0-Vegan-RC\lib\net45\Radical.dll</HintPath>
     </Reference>
     <Reference Include="Raven.Abstractions">
       <HintPath>..\..\packages\RavenDB.Database.2.5.2916\lib\net45\Raven.Abstractions.dll</HintPath>
